@@ -1,23 +1,34 @@
 ﻿//Gets a random subtitle with my student number (little joke)
 function getSubtitle() {
-    var text = ["{num=>UPxyz}", "/*UPxyz*/", "UP:x.y.z", "sub n{UPxyz}", "λy.UPxyz",
-        "//UPxyz", "<num>UPxyz</num>", "{'num':\"UPxyz\"}", "string n=\"UPxyz\";", "$num=UPxyz;",
-        "UPxyz", "/^UPxyz$/", "var n=\"UPxyz\";", "(0x6D1):\"UPxyz\"", "epoch:xyz(11/1/70)"];
+    tag = "UP"
+    sNum = "902282"
+
+    var text = [["{num=>","}"], ["/*","*/"], ["sub n{","}"], ["λy.", ""],
+        ["//", ""], ["<num>","</num>"], ["{'num':","}"], ["string n=",";"], ["$num=",";"],
+        ["", ""], ["/^","$/"], ["var n=",";"], ["(0x6D1):",""], ["epoch:","(11/1/70)"]];
 
     var num = Math.floor(Math.random() * text.length);
-    var teste = document.getElementById("subtitle");
+    var aTag = document.getElementById("subtitle");
+    var span = document.createElement("span")
+    var h4 = document.createElement("h4")
 
-    if (text[num] == "UP:x.y.z") {
-        var newText = text[num].replace('x.y.z', '90.22.82');
+    if(text[num][0].includes("epoch")){
+      h4.innerHTML = sNum;
     }
-    else {
-        var newText = text[num].replace('xyz', '902282');
+    else{
+      h4.innerHTML = tag+sNum;
     }
-    teste.innerHTML = newText;
+
+    span.innerHTML = text[num][0];
+    aTag.appendChild(span);
+    aTag.appendChild(h4);
+    span = document.createElement("span")
+    span.innerHTML = text[num][1];
+    aTag.appendChild(span);
 }
 
 function loadEvents() {
-    getSubtitle();    
+    getSubtitle();
 }
 
 loadEvents();

@@ -1,0 +1,9 @@
+body{
+  background: #0f0f23;
+  color: #fff
+}
+
+span{
+  opacity: .33;
+  page-break-after: avoid;
+}

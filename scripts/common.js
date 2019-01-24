@@ -20,4 +20,4 @@ function loadEvents() {
     getSubtitle();    
 }
 
-window.onload = loadEvents;
+loadEvents();

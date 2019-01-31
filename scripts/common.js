@@ -8,7 +8,7 @@ function getSubtitle() {
         ["", ""], ["/^","$/"], ["var n=",";"], ["(0x6D1):",""], ["epoch:","(11/1/70)"]];
 
     var num = Math.floor(Math.random() * text.length);
-    var aTag = document.getElementById("subtitle");
+    var aTag = document.getElementsByClassName("subtitle")[0];
     var span = document.createElement("span")
     var h4 = document.createElement("h4")
 

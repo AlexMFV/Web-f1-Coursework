@@ -29,10 +29,11 @@ header h4:hover{
   color: #99ff99;
 }
 
-header nav{
+header a{
   display: inline-block;
   padding-left: 2em;
   color: #009900;
+  text-decoration: none;
 }
 
 header nav:hover{

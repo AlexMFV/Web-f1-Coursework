@@ -65,9 +65,10 @@ header nav{
   right:0;
   bottom:0;
   left:0;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   background-color: #010101;
+  color: #fff;
   /*width: 100%;
   padding: 30px 30px;
   background-color: #010101;
@@ -75,12 +76,20 @@ header nav{
   text-align: center;*/
 }
 
-block{
-  border-radius: 25px;
+.footer a{
+  color: #fff;
+}
+
+.footer a:hover{
+  color: #009900;
+}
+
+.block{
+  background-color: rgb(5,5,5,0.8);
+  border-radius: 20px;
   padding: 20px 8%;
   width: 100%;
   color: #00ff00;
-  background-color: rgb(5,5,5,0.8);
   align-items: center;
 }
 

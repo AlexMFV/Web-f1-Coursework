@@ -1,13 +1,32 @@
+html, body, header, span, a, h4, footer, section{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html{
+  height: 100%;
+  box-sizing: inherit;
+}
+
 body{
-  background: #0f0f0f;
+  position: relative;
+  line-height: 1;
+  min-height: 100%;
+  padding-bottom: 6rem;
   color: #fff;
   font-family: "Source Code Pro", monospace;
-  background: url("/extras/background.jpg")
+  background: url("/extras/background.jpg");
 }
 
 header{
-  background-color: #000
-  font-size: 14pt;
+  background-color: #010101;
+  width: 100%;
+  height: 100px;
 }
 
 span{
@@ -34,25 +53,44 @@ header div a:hover{
 }
 
 header nav{
-  padding-left: 2em;
+  /*padding-left: 2em;*/
   display: inline-block;
   text-align: center;
   color: #009900;
   text-decoration: none;
 }
 
+.footer{
+  position: absolute;
+  right:0;
+  bottom:0;
+  left:0;
+  padding: 2rem;
+  text-align: center;
+  background-color: #010101;
+  /*width: 100%;
+  padding: 30px 30px;
+  background-color: #010101;
+  line-height: 25px;
+  text-align: center;*/
+}
+
+block{
+  border-radius: 25px;
+  padding: 20px 8%;
+  width: 100%;
+  color: #00ff00;
+  background-color: rgb(5,5,5,0.8);
+  align-items: center;
+}
+
 .bright{
-  display: inline-block;
-  padding: 0px 5px 0px 5px;
+  /*padding: 0px 5px 0px 5px;*/
   color: #00cc00;
 }
 
 .bright:hover{
   color: #99ff99;
-}
-
-.title-container {
-  display: inline;
 }
 
 .title-child {
@@ -61,4 +99,17 @@ header nav{
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: baseline;
+}
+
+.mainBlock{
+  padding: 3% 15%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  line-height: 25px;
+}
+
+#subtitle{
+  vertical-align: middle;
 }

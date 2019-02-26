@@ -10,18 +10,20 @@ function getSubtitle() {
     var num = Math.floor(Math.random() * text.length);
     var aTag = document.getElementsByClassName("subtitle")[0];
     var span = document.createElement("span")
-    var h4 = document.createElement("h4")
+    var a = document.createElement("a")
+    a.setAttribute("href", "/index.html");
+    a.setAttribute("class", "bright"); //Adds the CSS for the title
 
     if(text[num][0].includes("epoch")){
-      h4.innerHTML = sNum;
+      a.innerHTML = sNum;
     }
     else{
-      h4.innerHTML = tag+sNum;
+      a.innerHTML = tag+sNum;
     }
 
     span.innerHTML = text[num][0];
     aTag.appendChild(span);
-    aTag.appendChild(h4);
+    aTag.appendChild(a);
     span = document.createElement("span")
     span.innerHTML = text[num][1];
     aTag.appendChild(span);

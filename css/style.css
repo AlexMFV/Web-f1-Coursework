@@ -81,12 +81,8 @@ header nav{
   text-align: center;*/
 }
 
-.footer img{
-  padding-right: 20px;
-}
-
 .footer a{
-  padding-right: 20px;
+  padding-right: 10px;
   color: #fff;
 }
 
@@ -127,6 +123,43 @@ header nav{
   flex-wrap: wrap;
   align-items: center;
   line-height: 25px;
+}
+
+.review{
+  color: #eee;
+}
+
+.review a{
+  color: #999;
+}
+
+.review a:hover{
+  color: #007700;
+}
+
+.references{
+  color: #eee;
+}
+
+#btnTop{
+  display: none;
+  position: fixed;
+  bottom: 120px;
+  right: 5%;
+  z-index: 99;
+  font-size: 30px;
+  border: solid;
+  border-color: white;
+  border-width: 2px;
+  background-color: #007700;
+  color: white;
+  cursor: pointer;
+  padding: 2px 20px;
+  border-radius: 50px;
+}
+
+#btnTop:hover{
+  background-color: #00dd00;
 }
 
 #subtitle{

@@ -91,7 +91,7 @@ header nav{
 }
 
 .block{
-  background-color: rgb(5,5,5,0.8);
+  background-color: rgba(5,5,5,0.8);
   border-radius: 20px;
   padding: 20px 8%;
   width: 100%;

@@ -4,15 +4,24 @@ function getSubtitle() {
     sNum = "902282"
 
     var text = [["{num=>","}"], ["/*","*/"], ["sub n{","}"], ["λy.", ""],
-        ["//", ""], ["<num>","</num>"], ["{'num':","}"], ["string n=",";"], ["$num=",";"],
-        ["", ""], ["/^","$/"], ["var n=",";"], ["(0x6D1):",""], ["epoch:","(11/1/70)"]];
+        ["//", ""], ["{'num':","}"], ["string n=",";"], ["$num=",";"],
+        ["", ""], ["/^","$/"], ["var n=",";"], ["(0x6D1):",""], ["epoch:","~"]];
 
     var num = Math.floor(Math.random() * text.length);
+    var spaces = 8 - text[num][0].length;
     var aTag = document.getElementsByClassName("subtitle")[0];
     var span = document.createElement("span")
     var a = document.createElement("a")
     a.setAttribute("href", "/index.html");
     a.setAttribute("class", "bright"); //Adds the CSS for the title
+
+    var spaceText = "";
+    var i;
+    for(i = 0; i < spaces; i++){
+      spaceText += "\u00A0";
+    }
+
+    aTag.textContent = spaceText;
 
     if(text[num][0].includes("epoch")){
       a.innerHTML = sNum;

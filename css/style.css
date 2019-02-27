@@ -1,4 +1,4 @@
-html, body, header, span, a, h4, footer, section{
+html, body, header, span, a, h4, footer, section, nav, ul, li{
   padding: 0;
   margin: 0;
   border: 0;
@@ -33,31 +33,61 @@ span{
   opacity: .33;
   color: #009900;
   display: inline-block;
-}
-
-header nav{
-  align-content: center;
+  text-shadow: 0 0 2px #00cc00, 0 0 5px #00cc00;
 }
 
 header a{
   /*display: inline-block;*/
   color: #009900;
   text-decoration: none;
-  text-shadow: 1px 1px 1px #007225;
 }
 
-header div a:hover{
-  color: #99ff99;
-  text-shadow: 1px 1px 1px #06db4c;
-  display:inline;
-}
-
-header nav{
-  /*padding-left: 2em;*/
-  display: inline-block;
-  text-align: center;
+header .subtitle{
+  /*display: inline-block;*/
+  white-space: pre;
   color: #009900;
   text-decoration: none;
+  text-shadow: 0 0 2px #00cc00, 0 0 5px #00cc00;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-start: 0px;
+}
+
+header nav ul{
+  /*padding-left: 2em;*/
+  display: block;
+  width: fit-content;
+  color: #009900;
+  /*text-decoration: none;*/
+}
+
+header nav ul li{
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0 16px;
+}
+
+header nav ul li a:hover{
+  color: #99ff99;
+  text-shadow: 1px 1px 1px #06db4c;
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav{
+  display: block;
+}
+
+ul{
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 100px;
 }
 
 .footer{
@@ -162,6 +192,18 @@ header nav{
   background-color: #00dd00;
 }
 
-#subtitle{
-  vertical-align: middle;
+@media only screen and (min-width: 800px){
+  header .subtitle{
+    margin: 31px 0;
+    text-align: left;
+    line-height: 38px;
+    padding: 0px 20px 0px 40px;
+    border-right: 2px solid #009900;
+    float: left;
+  }
+
+  header nav ul{
+    margin: 20px 0px 0px 20px;
+    float: left;
+  }
 }

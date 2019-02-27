@@ -45,10 +45,11 @@ header a{
 
 header .subtitle{
   /*display: inline-block;*/
-  white-space: pre;
+  display: block;
   color: #009900;
   text-decoration: none;
   text-shadow: 0 0 2px #00cc00, 0 0 5px #00cc00;
+  margin-top: 20px;
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
   margin-inline-start: 0px;
@@ -187,10 +188,10 @@ ul{
   background-color: #00dd00;
 }
 
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 950px){
   header .subtitle{
     margin: 31px 0;
-    text-align: left;
+    text-align: center;
     line-height: 38px;
     padding: 0px 20px 0px 40px;
     border-right: 2px solid #009900;
@@ -200,5 +201,64 @@ ul{
   header nav ul{
     margin: 20px 0px 0px 20px;
     float: left;
+  }
+}
+
+@media only screen and (max-width: 949px){
+  header nav ul{
+    display: inline;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  header .subtitle{
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 772px){
+  header nav ul{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  header .subtitle{
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 590px){
+  header .subtitle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  header{
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 340px){
+  header{
+    height: 210px;
+  }
+}
+
+@media only screen and (max-width: 270px){
+  header{
+    height: 230px;
+  }
+}
+
+@media only screen and (max-width: 250px){
+  header{
+    height: 260px;
   }
 }

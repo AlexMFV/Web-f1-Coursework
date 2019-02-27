@@ -188,6 +188,30 @@ ul{
   background-color: #00dd00;
 }
 
+video{
+  border-radius: 10px;
+  width: 80%;
+  height: 60%;
+}
+
+img{
+  border-radius: 10px;
+  width: 90%;
+  height: 100%;
+}
+
+.mainpage{
+  color: #ccc;
+  line-height: 20px;
+  text-align: center;
+}
+
+.player{
+  color: #ccc;
+  line-height: 15px;
+  text-align: center;
+}
+
 @media only screen and (min-width: 950px){
   header .subtitle{
     margin: 31px 0;

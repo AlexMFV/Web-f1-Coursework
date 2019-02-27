@@ -6,7 +6,7 @@
   "useAtomicWrites": false,
   "deleteLocal": false,
   "hostname": "up902282.myvm.port.ac.uk",
-  "target": "alexmfv.github.io",
+  "target": "webf1_coursework",
   "ignore": [
     ".remote-sync.json",
     ".git/**"

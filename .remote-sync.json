@@ -5,7 +5,7 @@
   "uploadOnSave": true,
   "useAtomicWrites": false,
   "deleteLocal": false,
-  "hostname": "up902282.myvm.port.ac.uk",
+  "hostname": "34.76.175.48",
   "target": "webf1_coursework",
   "ignore": [
     ".remote-sync.json",

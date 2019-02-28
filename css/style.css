@@ -266,6 +266,12 @@ img{
   }
 }
 
+@media only screen and (max-width: 400px){
+  .mainBlock{
+    padding-bottom: 20%;
+  }
+}
+
 @media only screen and (max-width: 340px){
   header{
     height: 210px;
@@ -282,26 +288,32 @@ img{
   header{
     height: 260px;
   }
+
+  .mainBlock{
+    padding-bottom: 40%;
+  }
 }
 
 /*From w3School*/
 /*Edited by UP902282*/
 /* Style the button that is used to open and close the collapsible content */
 .collapse {
-  background-color: #eee;
-  color: #222;
+  background-color: rgba(0,0,0, 0.5);
+  color: #eee;
   cursor: pointer;
-  padding: 18px;
+  padding: 20px;
   width: 100%;
-  border: none;
   text-align: left;
-  outline: none;
-  font-size: 15px;
+  font-size: 18px;
+  border-width: 1px;
+  border-color: #007700;
+  font-weight: bold;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapse:hover {
-  background-color: #ccc;
+  background-color: #222;
+  border-color: #00ff00;
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -310,4 +322,28 @@ img{
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+
+.content p{
+  color: #222;
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.collapse:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.discovery{
+  color: #ccc;
+  text-align: center;
 }

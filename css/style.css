@@ -39,7 +39,7 @@ header span{
 
 header a{
   /*display: inline-block;*/
-  color: #009900;
+  color: #00aa00;
   text-decoration: none;
 }
 
@@ -65,11 +65,13 @@ header nav ul li{
   float: left;
   list-style: none;
   padding: 20px 16px;
+  font-weight: 900;
 }
 
 header nav ul li a:hover{
   color: #99ff99;
   text-shadow: 1px 1px 1px #06db4c;
+  font-weight: 550;
 }
 
 nav ul{

@@ -254,6 +254,10 @@ img{
   header .subtitle{
     float: left;
   }
+
+  .mainBlock{
+    padding: 3% 10%;
+  }
 }
 
 @media only screen and (max-width: 772px){
@@ -268,6 +272,10 @@ img{
   header .subtitle{
     float: left;
   }
+
+  .mainBlock{
+    padding: 3% 8%;
+  }
 }
 
 @media only screen and (max-width: 590px){
@@ -281,10 +289,15 @@ img{
   header{
     height: 150px;
   }
+
+  .mainBlock{
+    padding: 3% 5%;
+  }
 }
 
 @media only screen and (max-width: 400px){
   .mainBlock{
+    padding: 3% 3%;
     padding-bottom: 20%;
   }
 }
@@ -292,6 +305,10 @@ img{
 @media only screen and (max-width: 340px){
   header{
     height: 210px;
+  }
+  .mainBlock{
+    padding: 3% 2%;
+    padding-bottom: 20%;
   }
 }
 
@@ -307,7 +324,13 @@ img{
   }
 
   .mainBlock{
-    padding-bottom: 40%;
+    padding-bottom: 20%;
+  }
+}
+
+@media only screen and (max-width: 240px){
+  .mainBlock{
+    padding-bottom: 150px;
   }
 }
 

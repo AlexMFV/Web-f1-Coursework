@@ -80,6 +80,25 @@ nav{
   display: block;
 }
 
+pre {
+    /*white-space: pre-wrap;
+    color: #000;*/
+    text-align: left;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #22cc22;
+    color: #222;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-left: 1em;
+    max-width: 100%;
+    overflow: auto;
+    display: block;
+    word-wrap: break-word;
+}
+
 .footer{
   position: absolute;
   display: flex;
@@ -350,13 +369,4 @@ img{
 .discovery{
   color: #eee;
   text-align: center;
-}
-
-code{
-  text-align: left;
-  color: #ccc;
-}
-
-pre{
-  color: #000;
 }

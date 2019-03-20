@@ -5,7 +5,7 @@
   "uploadOnSave": true,
   "useAtomicWrites": false,
   "deleteLocal": false,
-  "hostname": "35.233.111.190",
+  "hostname": "34.76.162.212",
   "target": "webf1_coursework",
   "ignore": [
     ".remote-sync.json",

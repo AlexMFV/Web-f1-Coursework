@@ -38,13 +38,11 @@ header span{
 }
 
 header a{
-  /*display: inline-block;*/
   color: #00aa00;
   text-decoration: none;
 }
 
 header .subtitle{
-  /*display: inline-block;*/
   display: block;
   color: #009900;
   text-decoration: none;
@@ -53,11 +51,9 @@ header .subtitle{
 }
 
 header nav ul{
-  /*padding-left: 2em;*/
   display: block;
   width: fit-content;
   color: #009900;
-  /*text-decoration: none;*/
 }
 
 header nav ul li{
@@ -83,8 +79,6 @@ nav{
 }
 
 pre {
-    /*white-space: pre-wrap;
-    color: #000;*/
     text-align: left;
     background: #f4f4f4;
     border: 1px solid #ddd;
@@ -115,11 +109,6 @@ pre {
   text-align: center;
   background-color: #010101;
   color: #fff;
-  /*width: 100%;
-  padding: 30px 30px;
-  background-color: #010101;
-  line-height: 25px;
-  text-align: center;*/
 }
 
 .footer a{
@@ -141,7 +130,6 @@ pre {
 }
 
 .bright{
-  /*padding: 0px 5px 0px 5px;*/
   color: #00cc00;
 }
 
@@ -336,6 +324,11 @@ img{
   }
 }
 
+.discovery{
+  color: #eee;
+  text-align: center;
+}
+
 /*From w3School*/
 /*Edited by UP902282*/
 /* Style the button that is used to open and close the collapsible content */
@@ -389,9 +382,4 @@ img{
 
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
-.discovery{
-  color: #eee;
-  text-align: center;
 }
